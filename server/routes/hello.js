@@ -1,3 +1,8 @@
 export default function handler(req, res) {
-  res.status(200).send("Hi");
+  try {
+    res.status(200).send("Hi");
+  } catch (error) {
+    console.error("Error in handler:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
 }
