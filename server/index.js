@@ -8,7 +8,7 @@ import courseRoute from "./routes/course.route.js";
 import mediaRoute from "./routes/media.route.js";
 import purchaseRoute from "./routes/purchaseCourse.route.js";
 import courseProgressRoute from "./routes/courseProgress.route.js";
-import handler from "./routes/hello.js";
+import handler from "./routes/hello.route.js";
 
 dotenv.config({});
 
