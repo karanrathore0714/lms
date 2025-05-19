@@ -4,7 +4,7 @@
 //   app(req, res); // ← Directly forward to Express
 // }
 
-import express from express
+import express from 'express'
 
 const app  = express()
 app.get("/",(req,res) => {
