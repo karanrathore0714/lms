@@ -17,10 +17,10 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(cors({
-    origin: "http://localhost:5173", // change to prod origin for deployment
-    credentials: true
-}));
+// app.use(cors({
+//     origin: "http://localhost:5173", // change to prod origin for deployment
+//     credentials: true
+// }));
 
 app.use("/api/v1/media", mediaRoute);
 app.use("/api/v1/user", userRoute);
