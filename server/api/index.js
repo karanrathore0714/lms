@@ -29,7 +29,7 @@ app.use(cors({
  
 // apis
 app.use("/api/v1/media", mediaRoute);
-app.use("/api/hello", handler);
+// app.use("/api/hello", handler);
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/course", courseRoute);
 app.use("/api/v1/purchase", purchaseRoute);
@@ -41,6 +41,9 @@ app.use("/api/v1/progress", courseProgressRoute);
 // })
 
 
-// app.get('/', (req, res) => {
-//   res.send('Hi');
-// });
+app.get('/', (req, res) => {
+  res.send('Hi');
+});
+
+
+export default app
