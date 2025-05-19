@@ -2,13 +2,13 @@ import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import connectDB from "./database/db.js";
-import userRoute from "./routes/user.route.js";
-import courseRoute from "./routes/course.route.js";
-import mediaRoute from "./routes/media.route.js";
-import purchaseRoute from "./routes/purchaseCourse.route.js";
-import courseProgressRoute from "./routes/courseProgress.route.js";
-import handler from "./routes/hello.route.js";
+import connectDB from "../database/db.js";
+import userRoute from "../routes/user.route.js";
+import courseRoute from "../routes/course.route.js";
+import mediaRoute from "../routes/media.route.js";
+import purchaseRoute from "../routes/purchaseCourse.route.js";
+import courseProgressRoute from "../routes/courseProgress.route.js";
+import handler from "../routes/hello.route.js";
 
 dotenv.config({});
 
